@@ -1,16 +1,15 @@
 import random
 
 class RankingAgent:
-    def rank(self, hypothesis):
-        """Assign a research-based score to the hypothesis."""
-        credible_sources = ["ieee", "arxiv", "researchgate", "mit", "nature"]
+    def rank(self, query, papers):
+        """Assign a research-based relevance score to each paper."""
+        ranked_papers = []
         
-        score = random.randint(5, 10)  # Base score
+        for paper in papers:
+            score = random.randint(6, 10)  # Base score
+            if query.lower() in paper.lower():
+                score += 2  # Increase score if title closely matches query
+            
+            ranked_papers.append((paper, min(score, 10)))  # Ensure max score is 10
         
-        # Boost score if hypothesis contains trusted sources
-        for source in credible_sources:
-            if source in hypothesis.lower():
-                score += 2
-                break  # Only boost once per trusted source
-        
-        return {"hypothesis": hypothesis, "score": min(score, 10)}
+        return ranked_papers

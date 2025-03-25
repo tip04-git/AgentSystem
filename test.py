@@ -1,20 +1,18 @@
-from agents.generation import GenerationAgent
+from supervisor.supervisor import Supervisor
 
-gen_agent = GenerationAgent()
 
+# Initialize the Supervisor Agent
+supervisor = Supervisor()
+
+# List of two research topics to test
 topics = [
-    "AGI",
     "Quantum Learning",
-    "Machine Unlearning",
-    "Sustainable Software Design",
-    "Common Sense Reasoning in Agentic AI",
-    "AI Ethics and Bias",
-    "Neuromorphic Computing",
-    "Self-Supervised Learning",
-    "Explainable AI",
-    "Edge AI"
+    "Explainable AI"
 ]
 
+
+# Loop through topics and generate research insights
 for topic in topics:
-    result = gen_agent.generate(topic)
-    print(f"Topic: {topic} | Generated Hypothesis: {result}")
+    print("\n====================================")
+    supervisor.process(topic)
+    print("====================================\n")
