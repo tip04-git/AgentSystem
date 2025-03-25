@@ -1,5 +1,16 @@
+import random
+
 class RankingAgent:
-    def rank(self, idea):
-        """Assign a score to the idea."""
-        scores = {"solar panels": 8, "wind turbines": 7, "geothermal": 6}
-        return scores.get(idea, 5)
+    def rank(self, hypothesis):
+        """Assign a research-based score to the hypothesis."""
+        credible_sources = ["ieee", "arxiv", "researchgate", "mit", "nature"]
+        
+        score = random.randint(5, 10)  # Base score
+        
+        # Boost score if hypothesis contains trusted sources
+        for source in credible_sources:
+            if source in hypothesis.lower():
+                score += 2
+                break  # Only boost once per trusted source
+        
+        return {"hypothesis": hypothesis, "score": min(score, 10)}

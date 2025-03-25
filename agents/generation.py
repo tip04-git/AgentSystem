@@ -1,22 +1,20 @@
-import random
+import requests
 
 class GenerationAgent:
+    def __init__(self):
+        self.api_key = "AIzaSyCTaSsEkaDseC9kWn2-DI6AVXsP63YOvgc"  # Replace with your actual Google API Key
+        self.cx = "90939ac65eade482d"  # Your correct CX Code
+
     def generate(self, query):
-        """Generate initial ideas based on the query."""
-        ideas = {
-            "renewable energy": ["solar panels", "wind turbines", "geothermal"],
-            "ai research": ["neural networks", "symbolic AI", "reinforcement learning"],
-            "quantum computing": ["quantum gates", "quantum entanglement", "superposition computing"],
-            "quantum learning": ["quantum neural networks", "quantum machine learning", "hybrid quantum-classical AI"],
-            "cybersecurity": ["zero-trust architecture", "post-quantum cryptography", "blockchain security"],
-            "sustainable software": ["energy-efficient algorithms", "low-power computing", "eco-friendly cloud storage"],
-            "agi": ["self-learning AI", "adaptive neural networks", "goal-driven reasoning"],
-            "machine unlearning": ["data forgetfulness", "model retraining", "AI bias mitigation"],
-            "sustainable software design": ["green coding", "eco-friendly cloud systems", "carbon-aware computing"],
-            "common sense reasoning in agentic ai": ["causal inference", "real-world knowledge graphs", "AI decision making"]
-        }
+        """Fetch research ideas from Google Custom Search API."""
+        url = f"https://www.googleapis.com/customsearch/v1?q={query}&key={self.api_key}&cx={self.cx}"
 
-        # Convert query to lowercase to match dictionary keys correctly
-        query = query.lower().strip()  
+        try:
+            response = requests.get(url)
+            data = response.json()
 
-        return random.choice(ideas.get(query, ["No relevant ideas found."]))
+            if "items" in data and len(data["items"]) > 0:
+                return data["items"][0]["title"]  # Extract first search result title
+            return "No relevant research found."
+        except Exception as e:
+            return f"Error fetching data: {e}"

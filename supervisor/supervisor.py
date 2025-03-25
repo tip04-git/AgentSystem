@@ -1,4 +1,3 @@
-# /supervisor/supervisor.py
 from agents.generation import GenerationAgent
 from agents.reflection import ReflectionAgent
 from agents.ranking import RankingAgent
@@ -18,10 +17,10 @@ class Supervisor:
         self.metareview = MetaReviewAgent()
 
     def process(self, query):
-        """Run the agents in sequence for a given query."""
+        """Run agents in sequence for a given query."""
         print(f"Processing Query: {query}")
 
-        # Generate ideas
+        # Generate idea dynamically from web
         idea = self.generation.generate(query)
         print(f"Generation: {idea}")
 
@@ -29,12 +28,12 @@ class Supervisor:
         reflection = self.reflection.reflect(idea)
         print(f"Reflection: {reflection}")
 
-        # Rank the idea
-        score = self.ranking.rank(idea)
-        print(f"Ranking: {score}/10")
+        # Rank the idea based on credibility
+        ranked_result = self.ranking.rank(idea)
+        print(f"Ranking: {ranked_result['score']}/10")
 
         # Store initial result
-        self.memory.store(query, f"{idea} ({score}/10)")
+        self.memory.store(query, f"{idea} ({ranked_result['score']}/10)")
 
         # Evolve the idea
         refined_idea = self.evolution.evolve(idea)
@@ -49,9 +48,9 @@ class Supervisor:
         print(f"Meta-review: {feedback}")
 
         # Store final result
-        self.memory.store(query, f"{refined_idea} ({score + 1}/10)")
+        self.memory.store(query, f"{refined_idea} ({ranked_result['score'] + 1}/10)")
 
 # Test
 if __name__ == "__main__":
     supervisor = Supervisor()
-    supervisor.process("renewable energy")
+    supervisor.process("Quantum Learning")
