@@ -1,0 +1,60 @@
+{
+    "Quantum Learning": {
+        "summary": "Learning path. Scaling quantum computing toward utility. Courses. Learn about key concepts, algorithms, and their applications. View all \u00b7 Basics of Quantum  Quantum Information Science Learning: Future Pathways. Identifying essential concepts for future curricular and educator activities that will help learners  A free online course on the IBM Quantum Learning platform and serves as a primer on the foundational concepts in quantum-safe cryptography.",
+        "ranked_papers": [
+            {
+                "title": "arXiv.org e-Print archive",
+                "year": "Unknown",
+                "url": "https://arxiv.org/",
+                "score": 8,
+                "citations": 369,
+                "references": 79
+            },
+            {
+                "title": "Supervised Quantum Learning without Measurements | Scientific ...",
+                "year": "2017",
+                "url": "https://www.nature.com/articles/s41598-017-13378-0",
+                "score": 10,
+                "citations": 356,
+                "references": 76
+            },
+            {
+                "title": "Immersive quantum: A systematic literature review of XR in quantum ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S2949678024000370",
+                "score": 7,
+                "citations": 313,
+                "references": 31
+            }
+        ]
+    },
+    "Explainable AI": {
+        "summary": "Explainable artificial intelligence (XAI) is a set of processes and methods that allows human users to comprehend and trust the results and output created  Explore the four key principles of explainable AI applications to enhance transparency, interpretability, justifiability, and robustness in AI systems. Artificial intelligence (AI) is currently being utilized in a wide range of sophisticated applications, but the outcomes of many AI models are challenging .",
+        "ranked_papers": [
+            {
+                "title": "Explainable AI (XAI): A systematic meta-survey of current challenges ...",
+                "year": "2023",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0950705123000230",
+                "score": 10,
+                "citations": 212,
+                "references": 67
+            },
+            {
+                "title": "Explainable Artificial Intelligence (XAI) 2.0: A manifesto of open ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S1566253524000794",
+                "score": 7,
+                "citations": 87,
+                "references": 96
+            },
+            {
+                "title": "Explainable Artificial Intelligence (XAI): What we know and what is ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S1566253523001148",
+                "score": 8,
+                "citations": 72,
+                "references": 52
+            }
+        ]
+    }
+}

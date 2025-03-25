@@ -1,18 +1,16 @@
 from supervisor.supervisor import Supervisor
 
-
-# Initialize the Supervisor Agent
+# ✅ Initialize the Supervisor Agent
 supervisor = Supervisor()
 
-# List of two research topics to test
+# ✅ List of research topics to test
 topics = [
     "Quantum Learning",
-    "Explainable AI"
+    #"Explainable AI"
 ]
 
-
-# Loop through topics and generate research insights
+# ✅ Loop through topics and generate research insights
 for topic in topics:
     print("\n====================================")
-    supervisor.process(topic)
+    supervisor.process(topic)  # ✅ Now, it will check memory before fetching new data
     print("====================================\n")
