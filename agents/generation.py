@@ -6,7 +6,6 @@ class GenerationAgent:
     def __init__(self):
         self.google_api_key = "AIzaSyDGyS_4iz_RkuvoAn0r4fDfnX6i-lZ7Qfg"
         self.cx = "90939ac65eade482d"
-        self.semantic_scholar_api_key = "your_semantic_scholar_api_key_here"
 
     def fetch_from_google(self, query):
         """Fetch research papers from Google Search, ensuring quality results."""
@@ -56,18 +55,21 @@ class GenerationAgent:
             for item in general_response.get("items", [])[:3]:  # Get top 3 sources
                 snippet = item["snippet"].replace("\xa0", " ").strip()
 
-            # ✅ Remove unnecessary "..." at the end
+                # ✅ Remove unnecessary dates like "Dec 18, 2024"
+                snippet = re.sub(r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2}, \d{4}\b", "", snippet)
+
+                # ✅ Remove unnecessary "..." at the end
                 snippet = snippet.replace("...", "")
 
-            # ✅ Remove redundant words like "AI has attained great accuracy not just..."
+                # ✅ Remove redundant words like "AI has attained great accuracy not just..."
                 snippet = re.sub(r"\b(AI has attained great accuracy.*?not just)\b", "", snippet, flags=re.IGNORECASE)
 
                 domain_info.append(snippet)
 
-        # ✅ Ensure proper sentence structure
+            # ✅ Ensure proper sentence structure
             full_summary = " ".join(domain_info)
         
-        # ✅ Capitalize first letter and ensure proper ending punctuation
+            # ✅ Capitalize first letter and ensure proper ending punctuation
             if full_summary:
                 full_summary = full_summary[0].upper() + full_summary[1:]  # Capitalize first letter
                 if not full_summary.endswith("."):
