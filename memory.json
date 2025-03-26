@@ -56,5 +56,35 @@
                 "references": 52
             }
         ]
+    },
+    "Artificial Intelligence": {
+        "summary": "Sep 22, 2020  In this post, we'll break down six key concepts in artificial intelligence (including AI itself) so that you can better understand what this field is all about. AI applications are becoming increasingly common in a wide variety of industries, including healthcare, finance, retail, and manufacturing. May 8, 2023  Dive into the world of AI with this comprehensive guide to understanding key concepts and terminology, perfect for beginners and enthusiasts .",
+        "ranked_papers": [
+            {
+                "title": "Artificial Intelligence",
+                "year": "2024",
+                "url": "https://arxiv.org/list/cs.AI/recent",
+                "score": 9,
+                "citations": 395,
+                "references": 72
+            },
+            {
+                "title": "The future of artificial intelligence: Insights from recent Delphi studies",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0016328724001976",
+                "score": 9,
+                "citations": 374,
+                "references": 81
+            },
+            {
+                "title": "Overview - Apple Machine Learning Research",
+                "year": "Unknown",
+                "url": "http://go.nature.com/2yckpi9",
+                "score": 8,
+                "citations": 328,
+                "references": 62
+            }
+        ],
+        "hypothesis": "Artificial Intelligence"
     }
 }

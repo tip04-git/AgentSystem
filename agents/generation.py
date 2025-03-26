@@ -1,5 +1,6 @@
 import requests
 import re
+import time
 
 class GenerationAgent:
     def __init__(self):
@@ -9,6 +10,12 @@ class GenerationAgent:
 
     def fetch_from_google(self, query):
         """Fetch research papers from Google Search, ensuring quality results."""
+        
+        # To create Artificial Delay(To trigger Consider optimizing web requests command.) 
+        #print("\n⏳ Simulating a slow query...")
+        #time.sleep(6)  # ✅ Artificial delay to trigger Meta-review warning
+        #print("\n⏳ Fetching real-time data...")  
+
         research_query = f"{query} latest research 2024 OR recent studies site:arxiv.org OR site:researchgate.net OR site:nature.com OR site:sciencedirect.com"
         research_url = f"https://www.googleapis.com/customsearch/v1?q={research_query}&key={self.google_api_key}&cx={self.cx}"
 

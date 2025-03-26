@@ -5,8 +5,9 @@ supervisor = Supervisor()
 
 # ✅ List of research topics to test
 topics = [
-    "Quantum Learning",
-    #"Explainable AI"
+    #"Quantum Learning",
+    #"Explainable AI",
+    "Artificial Intelligence"
 ]
 
 # ✅ Loop through topics and generate research insights
