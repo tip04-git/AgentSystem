@@ -12,6 +12,5 @@ topics = [
 
 # ✅ Loop through topics and generate research insights
 for topic in topics:
-    print("\n====================================")
     supervisor.process(topic)  # ✅ Now, it will check memory before fetching new data
     print("====================================\n")

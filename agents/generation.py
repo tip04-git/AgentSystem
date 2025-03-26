@@ -1,11 +1,14 @@
 import requests
 import re
 import time
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 class GenerationAgent:
     def __init__(self):
-        self.google_api_key = "AIzaSyDGyS_4iz_RkuvoAn0r4fDfnX6i-lZ7Qfg"
-        self.cx = "90939ac65eade482d"
+        self.google_api_key = os.getenv("GOOGLE_API_KEY")
+        self.cx =os.getenv("GOOGLE_CX")
 
     def fetch_from_google(self, query):
         """Fetch research papers from Google Search, ensuring quality results."""
