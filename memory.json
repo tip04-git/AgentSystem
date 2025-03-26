@@ -28,5 +28,190 @@
             }
         ],
         "hypothesis": "Artificial Intelligence"
+    },
+    "Quantum Learning": {
+        "summary": "",
+        "ranked_papers": [],
+        "hypothesis": "Quantum Learning"
+    },
+    "\"Artificial Intelligence\"": {
+        "summary": "  In this post, we'll break down six key concepts in artificial intelligence (including AI itself) so that you can better understand what this field is all about. Overview of artificial intelligence-based applications in radiotherapy: Recommendations for implementation and quality assurance  introduction in clinical    Artificial Intelligence (AI) is currently being introduced into different domains, including medicine. Specifically in radiation oncology, .",
+        "ranked_papers": [
+            {
+                "title": "The future of artificial intelligence: Insights from recent Delphi studies",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0016328724001976",
+                "score": 9,
+                "citations": 412,
+                "references": 67
+            },
+            {
+                "title": "Impact of artificial intelligence on human loss in decision making ...",
+                "year": "2023",
+                "url": "https://www.nature.com/articles/s41599-023-01787-8",
+                "score": 7,
+                "citations": 120,
+                "references": 64
+            },
+            {
+                "title": "Artificial Intelligence",
+                "year": "Unknown",
+                "url": "https://arxiv.org/list/cs.AI/recent",
+                "score": 8,
+                "citations": 111,
+                "references": 71
+            }
+        ],
+        "hypothesis": "\"Artificial Intelligence\""
+    },
+    "\"Quantum Learning\"": {
+        "summary": "IBM Quantum Learning. Learn the basics of quantum computing, and how to use  Courses. Learn about key concepts, algorithms, and their applications. Machine and quantum learning for diamond-based quantum applications. Dylan G Stone and Carlo Bradac. Published 2 March 2023 \u2022 \u00a9 2023 The Author(s). Practical introduction to quantum-safe cryptography is a free online course on the IBM Quantum Learning  Applications of symmetric key cryptography .",
+        "ranked_papers": [
+            {
+                "title": "Systematic literature review: Quantum machine learning and its ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S1574013724000030",
+                "score": 6,
+                "citations": 451,
+                "references": 75
+            },
+            {
+                "title": "Supervised Quantum Learning without Measurements | Scientific ...",
+                "year": "2017",
+                "url": "https://www.nature.com/articles/s41598-017-13378-0",
+                "score": 8,
+                "citations": 289,
+                "references": 94
+            },
+            {
+                "title": "Immersive quantum: A systematic literature review of XR in quantum ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S2949678024000370",
+                "score": 10,
+                "citations": 119,
+                "references": 71
+            }
+        ],
+        "hypothesis": "\"Quantum Learning\""
+    },
+    "stop": {
+        "summary": "  r/youtube - Phone vibrates at video chapter time stamps, how to stop? 25 upvotes \u00b7 13 comments  This section provides an overview of the key concepts and tools in the Situation Monitoring Module.   I found the one by mappa but im not keen on downloading from softpedia / ilovefreesoftware  i usually go to the devs page  but in this .",
+        "ranked_papers": [
+            {
+                "title": "An Analysis of the New York City Police Department's \u201cStop-and ...",
+                "year": "Unknown",
+                "url": "https://www.researchgate.net/profile/Jeffrey-Fagan/publication/242391652_An_Analysis_of_the_NYPD's_Stop-and-Frisk_Policy_in_the_Context_of_Claims_of_Racial_Bias/links/5f5b89c1299bf1d43cf9de8a/An-Analysis-of-the-NYPDs-Stop-and-Frisk-Policy-in-the-Context-of-Claims-of-Racial-Bias.pdf",
+                "score": 10,
+                "citations": 442,
+                "references": 35
+            },
+            {
+                "title": "Act now to stop millions of research papers from disappearing",
+                "year": "2024",
+                "url": "https://www.nature.com/articles/d41586-024-03842-z",
+                "score": 10,
+                "citations": 420,
+                "references": 99
+            },
+            {
+                "title": "Women in the Workplace 2024 report | McKinsey",
+                "year": "2024",
+                "url": "https://go.nature.com/34DFwbe",
+                "score": 9,
+                "citations": 74,
+                "references": 22
+            }
+        ],
+        "hypothesis": "stop"
+    },
+    "\"exit\"": {
+        "summary": "  I want to quit my Console Application, I have tried following commands: Enviroment.Exit(0); Application.Exit(); But it leads to Press any key to continue. As a result, the IDR and online loan consolidation applications are temporarily unavailable.  Complete Loan Exit Counseling. Parent. We'll share useful info  How do I setup the esc key to exit Godot Application? Ask Question. Asked 7 years, 9 months ago. Modified 1 year, 3 months ago. Viewed 7k times.",
+        "ranked_papers": [
+            {
+                "title": "A liquid-like coat mediates chromosome clustering during mitotic exit ...",
+                "year": "2024",
+                "url": "https://www.sciencedirect.com/science/article/pii/S1097276524006208",
+                "score": 9,
+                "citations": 452,
+                "references": 49
+            },
+            {
+                "title": "Exploring entry-exit correlation coefficient (EEC) as new quantitative ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S2095263524000967",
+                "score": 7,
+                "citations": 162,
+                "references": 79
+            },
+            {
+                "title": "Airline competition: A comprehensive review of recent research ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S2941198X24000125",
+                "score": 9,
+                "citations": 78,
+                "references": 54
+            }
+        ],
+        "hypothesis": "\"exit\""
+    },
+    "'exit'": {
+        "summary": "  I want to quit my Console Application, I have tried following commands: Enviroment.Exit(0); Application.Exit(); But it leads to Press any key to continue. Federal Student Aid is the largest provider of financial aid for college in the U.S. Understand aid, apply for aid, and manage your student loans today.   I figured it out. I was able to get it working with the following: extends Node2D func _ready(): set_process(true) func _process(delta): if .",
+        "ranked_papers": [
+            {
+                "title": "Exploring entry-exit correlation coefficient (EEC) as new quantitative ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S2095263524000967",
+                "score": 10,
+                "citations": 337,
+                "references": 86
+            },
+            {
+                "title": "Airline competition: A comprehensive review of recent research ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S2941198X24000125",
+                "score": 9,
+                "citations": 184,
+                "references": 51
+            },
+            {
+                "title": "Women in the Workplace 2024 report | McKinsey",
+                "year": "2024",
+                "url": "https://go.nature.com/34DFwbe",
+                "score": 7,
+                "citations": 110,
+                "references": 75
+            }
+        ],
+        "hypothesis": "'exit'"
+    },
+    "\"AI\"": {
+        "summary": "  In this post, we'll break down six key concepts in artificial intelligence (including AI itself) so that you can better understand what this field is all about. AI applications are becoming increasingly common in a wide variety of industries, including healthcare, finance, retail, and manufacturing. Introduction. The past decade has seen the emergence of modern artificial intelligence and a variety of AI-powered technological innovations. This rapid .",
+        "ranked_papers": [
+            {
+                "title": "Artificial Intelligence",
+                "year": "2024",
+                "url": "https://arxiv.org/list/cs.AI/recent",
+                "score": 6,
+                "citations": 447,
+                "references": 53
+            },
+            {
+                "title": "Artificial intelligence in information systems research: A systematic ...",
+                "year": "2005",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0268401221000761",
+                "score": 7,
+                "citations": 372,
+                "references": 64
+            },
+            {
+                "title": "Opinion Paper: \u201cSo what if ChatGPT wrote it?\u201d Multidisciplinary ...",
+                "year": "Unknown",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0268401223000233",
+                "score": 9,
+                "citations": 60,
+                "references": 43
+            }
+        ],
+        "hypothesis": "what in \"AI\""
     }
 }

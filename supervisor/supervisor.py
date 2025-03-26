@@ -82,7 +82,8 @@ class Supervisor:
 
             # ✅ Step 6: Evolution Agent refines hypothesis
             if "needs refinement" in reflection_feedback:
-                hypothesis = self.evolution.evolve(hypothesis)
+                hypothesis = self.evolution.evolve(hypothesis, ranked_papers)
+
                 print(f"🔄 **Evolved Hypothesis:** {hypothesis}")
 
             # ✅ Step 7: Store updated data in memory
